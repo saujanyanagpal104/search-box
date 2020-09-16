@@ -20,7 +20,7 @@ body {
     font-size: 15px;
 }
 
-.results-container {
+.results-container, .user-not-found {
     width: 340px;
     text-align: center;
     border: 1px solid #b1b1b1;
@@ -50,11 +50,27 @@ body {
     font-size: 14px;
 }
 
-.result-row:hover {
+.active-cursor {
     background-color: lightyellow;
     cursor: pointer;
 }
 
 .user-not-found {
     padding: 40px 0px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.disable-mouse {
+    pointer-events: none;
+}
+
+.enable-mouse {
+    pointer-events: unset;
+}
+
+.highlight {
+    color: red;
 }
